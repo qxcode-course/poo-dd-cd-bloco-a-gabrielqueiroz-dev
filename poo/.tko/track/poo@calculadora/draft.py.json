@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-09-09",
+            "content": "class Calculator:\n    display: float = 0.0\n    batteryMax: int = 100\n    battery: int = 0\n\n    def __init__(self, baterryMax: int) -> None:\n        self.baterryMax = baterryMax\n\n    def charge(self, amount: int) -> None:\n        self.battery += amount\n        if self.battery > self.baterryMax:\n            self.battery = self.baterryMax\n\n    def sum(self, a: float, b: float):\n        if self.battery <= 0:\n            print(\"fail: bateria insuficiente\")\n            return\n        self.battery -= 1\n        self.display = a + b\n\n    def division(self, num: float, den: float):\n        if self.battery <= 0:\n            print(\"fail: bateria insuficiente\")\n            return\n        self.battery -= 1\n        if den == 0:\n            print(\"fail: divisao por zero\")\n            return\n        self.display = num / den\n\n    def __str__(self) -> str:\n        return f\"display = {self.display:.2f}, battery = {self.battery}\"\n\ncalculator = Calculator(0)\nwhile True:\n  command = input()\n  args = command.split()\n  print(\"$\" + command)\n  if args[0] == \"end\":\n    break\n  elif args[0] == \"show\":\n    print(calculator)\n  elif args[0] == \"init\":\n    calculator = Calculator(int(args[1]))\n  elif args[0] == \"charge\":\n    calculator.charge(int(args[1]))\n  elif args[0] == \"sum\":\n    calculator.sum(float(args[1]), float(args[2]))\n  elif args[0] == \"div\":\n    calculator.division(float(args[1]), float(args[2]))\n  else:\n    print(\"fail: comando invalido\")\n",
+            "lines": "52"
+        }
+    ]
+}

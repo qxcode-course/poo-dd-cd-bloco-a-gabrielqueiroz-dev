@@ -1,1 +1,34 @@
 2025-10-06 19:00:00, MOVE, v:1, k:poo@toalha, mode:DOWN
+2025-10-06 19:01:55, MOVE, v:1, k:poo@carro, mode:DOWN
+2025-10-06 19:01:57, MOVE, v:1, k:poo@animal, mode:DOWN
+2025-10-06 19:03:07, MOVE, v:1, k:poo@toalha, mode:PICK
+2025-10-06 19:03:08, EXEC, v:1, k:poo@toalha, mode:LOCK, rate:0, size:57
+2025-10-06 19:03:10, EXEC, v:1, k:poo@toalha, mode:LOCK, rate:0
+2025-10-06 19:03:15, MOVE, v:1, k:poo@toalha, mode:BACK
+2025-10-06 19:04:09, SELF, v:1, k:poo@toalha, rate:90, human:ajuda_de_amigo, guide:aulas_gravadas, alone:9, study:50
+2025-10-06 19:04:14, MOVE, v:1, k:poo@toalha, mode:PICK
+2025-10-06 19:04:14, EXEC, v:1, k:poo@toalha, mode:LOCK, rate:0
+2025-10-06 19:04:48, MOVE, v:1, k:poo@toalha, mode:BACK
+2025-10-06 19:04:50, MOVE, v:1, k:poo@toalha, mode:PICK
+2025-10-06 19:04:50, EXEC, v:1, k:poo@toalha, mode:LOCK, rate:0, size:57
+2025-10-06 19:05:41, MOVE, v:1, k:poo@toalha, mode:BACK
+2025-10-06 19:05:43, MOVE, v:1, k:poo@carro, mode:PICK
+2025-10-06 19:05:44, EXEC, v:1, k:poo@carro, mode:FULL, rate:100, size:81
+2025-10-06 19:05:48, EXEC, v:1, k:poo@carro, mode:FULL, rate:100
+2025-10-06 19:05:49, MOVE, v:1, k:poo@carro, mode:BACK
+2025-10-06 19:06:42, SELF, v:1, k:poo@carro, rate:100, human:ajuda_de_amigo, guide:ajuda_da_aula_gravada, alone:7, study:45
+2025-10-06 19:07:27, MOVE, v:1, k:poo@animal, mode:PICK
+2025-10-06 19:07:28, EXEC, v:1, k:poo@animal, mode:FULL, rate:100, size:46
+2025-10-06 19:07:37, MOVE, v:1, k:poo@animal, mode:BACK
+2025-10-06 19:08:13, SELF, v:1, k:poo@animal, rate:100, guide:ajuda_de_video_no_youtube, alone:8, study:50
+2025-10-06 19:08:16, MOVE, v:1, k:poo@calculadora, mode:DOWN
+2025-10-06 19:09:07, MOVE, v:1, k:poo@calculadora, mode:PICK
+2025-10-06 19:09:09, EXEC, v:1, k:poo@calculadora, mode:FULL, rate:100, size:52
+2025-10-06 19:09:11, MOVE, v:1, k:poo@calculadora, mode:BACK
+2025-10-06 19:09:50, SELF, v:1, k:poo@calculadora, rate:100, human:ajuda_de_amigo_no_final_apenas, alone:9, study:35
+2025-10-06 19:09:54, MOVE, v:1, k:poo@enxugar, mode:DOWN
+2025-10-06 19:10:36, MOVE, v:1, k:poo@enxugar, mode:PICK
+2025-10-06 19:10:38, EXEC, v:1, k:poo@enxugar, mode:FULL, rate:100, size:57
+2025-10-06 19:10:41, MOVE, v:1, k:poo@enxugar, mode:BACK
+2025-10-06 19:11:11, SELF, v:1, k:poo@enxugar, rate:100, human:ajuda_de_um_amigo, alone:5, study:120
+2025-10-06 19:11:21, SELF, v:1, k:poo@enxugar, rate:100, human:ajuda_de_um_amigo, alone:5, study:25

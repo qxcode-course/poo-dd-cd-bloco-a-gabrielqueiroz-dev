@@ -13,12 +13,17 @@ sources:
 expanded:
 - poo@campanha-principal
 - poo@bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  poo@animal: '{rate:100, guide:ajuda_de_video_no_youtube, alone:8, study:50}'
+  poo@carro: '{rate:100, human:ajuda_de_amigo, guide:ajuda_da_aula_gravada, alone:7,
+    study:45}'
+  poo@calculadora: '{rate:100, human:ajuda_de_amigo_no_final_apenas, alone:9, study:35}'
+  poo@enxugar: '{rate:100, human:ajuda_de_um_amigo, alone:5, study:25}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
 lang: py
-selected: poo@toalha
+selected: poo@bloco_b-primeiras-classes

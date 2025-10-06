@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-03-08",
+            "content": "@@ -618,18 +618,16 @@\n xWetness\n-()\n %0A%0A    de\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-06_19-04-50",
+            "content": "class Towel: \n    color: str\n    size: str\n    wetness: int\n\n    def __init__(self, color: str, size: str) -> None:\n        self.color = color\n        self.size = size\n        self.wetness = 0\n\n    def getMaxWetness(self) -> int:\n        if self.size == \"P\":\n            return 10\n        elif self.size == \"M\":\n            return 20\n        elif self.size == \"G\":\n            return 30\n\n        return 0\n\n    def dry(self, amount: int) -> None:\n            self.wetness += amount\n            if self.wetness > self.getMaxWetness():\n                print(\"Toalha encharcada\")\n                self.wetness = self.getMaxWetness()\n\n    def wringOut(self) -> None:\n            self.wetness = 0\n\n    def isDry(self) -> bool: \n            return self.wetness == 0\n\n    def show(self) -> None:\n            print(self)\n\n    def __str__(self) -> str:\n            return f\"{self.color} {self.size} {self.wetness}\"\n\ntowel = Towel(\"Amarela\", \"P\")\ntowel.show()\ntowel.dry(5)\ntowel.show()\nprint(towel.isDry())\ntowel.dry(5)\ntowel.show()\ntowel.dry(5)\ntowel.show()\n\ntowel.wringOut()\ntowel.show()\n\ntowel = Towel(\"Vermelho\", \"G\")\nprint(towel.isDry())\ntowel.dry(30)\ntowel.show()\nprint(towel.isDry())\ntowel.dry(1)",
+            "lines": "57"
+        }
+    ]
+}

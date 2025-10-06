@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-07-28",
+            "content": "class Animal:\n    species: str\n    age: int\n    sound: str\n\n    def __init__(self, species: str, sound: str) -> None:\n        self.species = species\n        self.age = 0\n        self.sound = sound\n\n    def makeSound(self) -> str:\n        if self.age == 0:\n            return \"---\"\n        if self.age == 4:\n            return \"RIP\"\n        return self.sound\n    \n    def ageBy(self, increment: int) -> None:\n        self.age += increment\n        if (self.age >= 4):\n            print(f\"warning: {self.species} morreu\")\n            self.age = 4\n\n    def __str__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n    \n  \nanimal = Animal(\"\", \"\")\nwhile True:\n    commandStr = input()\n    command = commandStr.split()\n    if command[0] == \"end\":\n        print(f\"${commandStr}\")\n        break\n    if command[0] == \"init\":\n        print(f\"${commandStr}\")\n        animal = Animal(command[1], command[2])\n    if command[0] == \"show\":\n        print(f\"${commandStr}\")\n        print(animal)\n    if command[0] == \"grow\":\n        print(f\"${commandStr}\")\n        animal.ageBy(int(command[1]))\n    if command[0] == \"noise\":\n        print(f\"${commandStr}\")\n        print(animal.makeSound())",
+            "lines": "46"
+        }
+    ]
+}
